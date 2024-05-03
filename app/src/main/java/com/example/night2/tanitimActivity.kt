@@ -3,11 +3,15 @@ package com.example.night2
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.night2.databinding.ActivityTanitimBinding
 
+@Suppress("DEPRECATION")
 class tanitimActivity : AppCompatActivity() {
+    private lateinit var tasarim:ActivityTanitimBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_tanitim)
+        tasarim= ActivityTanitimBinding.inflate(layoutInflater)
+        setContentView(tasarim.root)
 
         val cicekAdi = intent.getStringExtra("CICEK_ADI")
         val cicekAdiTextView: TextView = findViewById(R.id.textView5)
@@ -18,6 +22,10 @@ class tanitimActivity : AppCompatActivity() {
         cicekAdiTextView.text = cicekAdi
 
         cicekBilgiTextView.text = cicekBilgi
+
+
+
+
 
 
     }

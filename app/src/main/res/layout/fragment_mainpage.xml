@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/frameLayout4"
     android:layout_width="match_parent"
-    android:background="@drawable/aa"
+    android:background="@drawable/bc"
     android:layout_height="match_parent"
     tools:context=".mainpage" >
 
@@ -12,23 +12,25 @@
         android:id="@+id/button5"
         android:layout_width="159dp"
         android:layout_height="58dp"
-        android:layout_marginStart="144dp"
-        android:layout_marginTop="260dp"
         android:text="Çiçekler"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.143" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
-        android:layout_width="380dp"
-        android:layout_height="65dp"
+        android:layout_width="419dp"
+        android:layout_height="68dp"
         android:layout_gravity="bottom"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="72dp"
 
 
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         app:menu="@menu/bottom_navigation_menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/bc"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
@@ -10,6 +11,7 @@
         android:id="@+id/fragmentContainerView"
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="423dp"
+        android:background="@drawable/bc"
         android:layout_height="736dp"
         app:defaultNavHost="true"
         app:layout_constraintBottom_toBottomOf="parent"
