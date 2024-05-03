@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/anasayfa">
+
+    <fragment
+        android:id="@+id/anasayfa"
+        android:name="com.example.night2.anasayfa"
+        android:label="anasayfa"
+        tools:layout="@layout/anasayfa" >
+        <action
+            android:id="@+id/action_anasayfa_to_kayit"
+            app:destination="@id/kayit" />
+        <action
+            android:id="@+id/action_anasayfa_to_giris"
+            app:destination="@id/giris" />
+    </fragment>
+    <fragment
+        android:id="@+id/kayit"
+        android:name="com.example.night2.kayit"
+        android:label="kayit"
+        tools:layout="@layout/kayit" />
+    <fragment
+        android:id="@+id/giris"
+        android:name="com.example.night2.giris"
+        android:label="fragment_giris"
+        tools:layout="@layout/fragment_giris" >
+        <action
+            android:id="@+id/action_giris_to_mainpage"
+            app:destination="@id/mainpage" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainpage"
+        android:name="com.example.night2.mainpage"
+        android:label="fragment_mainpage"
+        tools:layout="@layout/fragment_mainpage" >
+        <action
+            android:id="@+id/action_mainpage_to_cicekler"
+            app:destination="@id/cicekler" />
+    </fragment>
+    <activity
+        android:id="@+id/cicekler"
+        android:name="com.example.night2.cicekler"
+        android:label="activity_cicekler"
+        tools:layout="@layout/activity_cicekler" />
+</navigation>
