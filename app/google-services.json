@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "444763924978",
+    "project_id": "flowerapp-3670f",
+    "storage_bucket": "flowerapp-3670f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:444763924978:android:9bf091e103638f4b9ae36b",
+        "android_client_info": {
+          "package_name": "com.example.night2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkbmQqicFNw8rLd4s1ov2og1h1yZQ-b78"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
